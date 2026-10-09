@@ -2,7 +2,7 @@
 #include <vector>
 #include <cstdlib>
 using namespace std;
-
+//This is a semi-finished skeleton.
 
 //函数模块
 //求和
