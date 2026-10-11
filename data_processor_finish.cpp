@@ -2,6 +2,7 @@
 #include <vector>
 #include <cstdlib>
 #include <algorithm>
+#include <windows.h>
 using namespace std;
 
 
@@ -53,7 +54,8 @@ double sum = 0;
 }
 
 int main(){
-
+SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
 
 
   //输入模块
