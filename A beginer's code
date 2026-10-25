@@ -1,0 +1,104 @@
+/* luogu T837227 051-C321-07-铜灯
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    long long n;
+    cin>>n;
+   unsigned long long k;
+    vector<char>a(n);
+    for(int i = 0;i<n;i++){
+        cin>>a[i];
+    }
+    cin>>k;
+    for(unsigned long long steps =0;steps<k;steps++){
+    for(int i = n-1;i>=0;i--){
+        if(a[i]=='1'){
+            a[i]='0';
+        }
+       else if(a[i]=='0'){
+            a[i]='1';
+            break;
+          }
+      }
+  }
+  for(int i=0;i<n;i++){
+  cout<<a[i];
+  }
+  return 0;
+}
+  */
+
+
+  /*T837226 051-C312-06-校园饮料售卖
+#include <bits/stdc++.h>
+  using namespace std;
+  int main(){
+    int n = 0;
+    cin>>n;
+    int bai,wushi,ershi,shi,wu,yi;
+    int sum = 0;
+    while(true){
+    int bai = n % 100;
+    if(bai > 100){
+        sum++;
+    }
+   else if(bai < 100){
+        n = bai;
+         while(true){
+    int wushi = bai % 50;
+    if(wushi > 50){
+        sum++;
+    }
+   else if(wushi < 50){
+             n = wushi;
+    while(true){
+    int ershi = n % 20;
+    if(ershi > 20){
+        sum++;
+    }
+   else if(ershi < 20){
+           int n = ershi;
+    while(true){
+    int shi = n % 10;
+    if(shi > 10){
+        sum++;
+    }
+   else if(shi < 10){
+        int n = shi;
+        while(true){
+           int wu = n % 5;
+           if(wu > 5){
+            sum++;
+           }
+           else{
+                sum+n;
+                    }
+                  }
+                 }
+               }
+             }
+           }
+          }
+        }      
+       }
+      } 
+       cout<<sum;
+  return 0;
+  }  */
+
+
+  /*T837226 051-C312-06-校园饮料售卖
+  #include <bits/stdc++.h>
+  using namespace std;
+  int main(){
+    int n;
+    cin<<n;
+    int sum = 0;
+    int a[]={100,50,20,10,5,1};
+         for(int i = 0;i<6;i++){
+            sum += n / a[i];
+              n %= a[i];
+         }
+         cout<<sum;
+         return 0;
+  }*/
